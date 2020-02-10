@@ -1,7 +1,9 @@
 package com.skilldistillery.eventtracker.repositories;
 
-import org.springframework.data.repository.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public class LanguageRepository implements Repository<Language, Integer> {
+import com.skilldistillery.eventtracker.entities.Language;
+
+public interface LanguageRepository extends JpaRepository<Language, Integer> {
 
 }
